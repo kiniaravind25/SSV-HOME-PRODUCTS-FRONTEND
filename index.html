@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSV Home Products - Order Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Shop Details Page -->
+    <div id="shopDetailsPage" class="active">
+        <h1>Welcome to SSV Home Products</h1>
+        <p>Homemade and Handmade Snacks and Perishable Items.</p>
+        <p><strong>Address:</strong> 123 Main Street, Cityville</p>
+        <p><strong>Phone:</strong> +1 123-456-7890</p>
+        <input type="text" id="customerName" placeholder="Enter Customer Name">
+        <button id="enterCustomerButton">Enter</button>
+    </div>
+
+    <!-- Order Management Page -->
+    <div id="orderManagementPage" class="hidden">
+        <h1>Order Management</h1>
+
+        <!-- Customer Info -->
+        <div id="customerInfoSection">
+            <h2>Customer Information</h2>
+            <p id="customerOldBalance"></p>
+            <button id="loadOrderHistoryButton">Show Order History</button>
+            <button id="getItemsButton">Get Available Items</button>
+        </div>
+
+        <!-- Available Items -->
+        <div id="availableItemsSection" class="hidden">
+            <h2>Available Items</h2>
+        </div>
+
+        <!-- Order Summary -->
+        <div id="orderSummarySection" class="hidden">
+            <h2>Order Summary</h2>
+            <div id="orderSummary"></div>
+            <p id="orderTotal"></p>
+            <label for="amountPaid">Amount Paid:</label>
+            <input type="number" id="amountPaid" placeholder="Enter Amount Paid">
+            <button id="placeOrderButton">Place Order</button>
+        </div>
+
+        <!-- Order History -->
+        <div id="orderHistorySection" class="hidden">
+            <h2>Order History (Last 10 Days)</h2>
+            <div id="orderHistory"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

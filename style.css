@@ -1,0 +1,171 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide inactive sections */
+.hidden {
+    display: none;
+}
+
+/* Section Styling */
+#customerInfoSection, #availableItemsSection, #orderSummarySection, #orderHistorySection {
+    margin-bottom: 30px;
+}
+
+#customerInfoSection p, #orderSummarySection p, #orderHistorySection p {
+    font-size: 1.1em;
+    color: #555;
+    padding: 5px 0;
+}
+
+#orderSummary {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0069d9;
+    color: #fff;
+}
+
+/* Order History Items Styling */
+.order-history-item {
+    background-color: #eef;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Available Items Section */
+#availableItemsSection .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#availableItemsSection .item label {
+    font-size: 1.1em;
+}
+
+#availableItemsSection input[type="number"] {
+    width: 60px;
+    padding: 5px;
+}
+
+#availableItemsSection button {
+    padding: 5px 10px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#availableItemsSection button:hover {
+    background-color: #138496;
+}
+
+/* Input styling */
+input[type="text"], input[type="number"] {
+    width: calc(100% - 20px);
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#shopDetailsPage, #orderManagementPage {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Place Order Section */
+#orderTotal {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+#amountPaid {
+    margin-top: 10px;
+}
+
+#placeOrderButton {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#placeOrderButton:hover {
+    background-color: #e0a800;
+}
